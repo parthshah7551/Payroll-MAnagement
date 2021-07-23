@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Payroll Management System</title>
+    <link rel="Stylesheet" href="index.css">
+    <script type="text/javascript">
+        function validate() {
+            var em = document.loginform.email.value;
+            var upassword = document.loginform.password.value;
+
+            var index_at = em.indexOf("@");
+            var index_dot = em.indexOf(".");
+            if (index_dot == -1 || index_dot == 0 || index_dot == index_at) {
+                alert("Invalid e-mail address!");
+                return false;
+            }
+            if (upassword.length == 0) {
+                alert("Enter your Password");
+                return false;
+            }
+            return true;
+        }
+
+        function myFunction() {
+            var person = prompt("Please enter your Email id:");
+            var index_at = person.indexOf("@");
+            var index_dot = person.indexOf(".");
+            if (person == null || person == "") {
+                alert("Enter your email id");
+                return false;
+            }
+            if (index_dot == -1 || index_dot == 0 || index_dot == index_at) {
+                alert("Invalid e-mail address!");
+                return false;
+            } else {
+                alert("Reset Link has been sent");
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <h1 id="heading">Payroll Management</h1>
+        <div id="links">
+            <a class="link" href="">
+                <h3 id="home">Home</h3>
+            </a>
+            <a class="link" href="Contact Us.html">
+                <h3 id="contact">Contact Us</h3>
+            </a>
+            <a class="link" href="about us.html">
+                <h3>About Us</h3>
+            </a>
+            <h3 id="support" class="link">Help</h3>
+        </div>
+    </header>
+    <main>
+        <section class="input">
+            <div id="in" class="in">
+                <form method="POST" onsubmit="validate()" name="loginform" action="login.php">
+                    <span class="labels">Email id :</span>
+                    <input type="text" id="user" name="email">
+                    <br>
+                    <br>
+                    <label class="labels">Password : </label>
+                    <input type="password" id="pass" name="password"><br>
+                    <br>
+                    <label class="labels1" name="fpass" id="demo"><a onclick="myFunction()"> Forgot Password </a></label>
+                    <br>
+                    <br>
+                    <button type="submit" class="link1" name="login">Log In</button> &nbsp;
+                    <button class="link1">
+                    <a href="sign_up.html" class="link1" >Sign Up</a></button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h4>Copyright &copy; 2021, All Rights Reserved.</h4>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+body{
+    background: url('Pics/d1.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+h3{
+    display: inline;
+    text-align: center;
+    font-size: 22px;
+    margin: 0px 5px;
+    
+}
+.link
+{
+		color:#FFFFFF;
+        text-decoration: none;
+        padding : 4px 10px;
+        /* display: flex; */
+}
+
+.link:hover{
+        color: black;
+        
+        background-color: white;
+        border-radius: 50px;
+}
+header{
+    text-align: center;
+    background: #0000005d;
+    margin-top: -20px;
+}
+h1{
+        color: white;
+        /* margin-top: 2000px; */
+}
+#links{
+    padding: 20px 20px;
+}
+
+#links h3{
+    padding : 4px 13px;
+}
+
+footer{
+    margin-bottom: -200px;
+    text-align: center;
+    background:  #0000005d;
+    padding-bottom: 30px;
+    padding:10px 10px;
+    color: white;
+}
+
+#in{
+    margin-top: 200px;
+    margin-bottom: 200px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 4px;
+    background: #0000005d;
+	color:#FFFFFF;
+    padding: 20px;
+}
+.link1{
+        text-decoration: none;
+        color: black;
+        font-size: 16px;
+        margin-bottom: 10px;
+        padding: 5px;
+        cursor: pointer;
+}
+.labels{
+        font-size: 20px;
+        font-weight: bold;
+}
+/* .labels:hover{
+    color: black;
+} */
+.labels1{
+    font-size: 20px;
+    font-weight: bold;
+}
+.labels1:hover{
+        color: blue;
+}
+.in{
+        width:30%;
+        height: 50%;
+        margin:auto;
+        border: 2px solid black;
+}

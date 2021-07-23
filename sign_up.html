@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Sign Up Page</title>
+    <!-- <script type="text/javascript">
+        function myfun(){
+            var a=document.getElementById("inputEmail4");
+            if (a.value == "") {
+                a.style.border = "solid 2px red"
+                retun false;
+            }
+            if(a.indexOf('@')<=0){
+                a.style.border = "2px solid red";
+                return false;
+            }
+            if((a.charAt(a.length-4)!='.') && (a.charAt(a.length-3)!='.')){
+                a.style.border = "2px solid red";
+                return false;
+            }
+        }
+    </script> -->
+
+
+    <style>
+        body {
+            background-color: slategray;
+            width: 100%;
+        }
+        
+        .formc {
+            border: 5px solid black;
+            width: 60rem;
+            border-radius: 20px;
+            -webkit-box-shadow: -5px 2px 50px 20px black;
+            -moz-box-shadow: -5px 2px 50px 20px black;
+            box-shadow: -5px 2px 50px 20px black;
+            margin: 40px 30px;
+        }
+        
+        @media (min-width: 992px) {
+            .formc {
+                border: 5px solid black;
+                width: 60rem;
+                border-radius: 20px;
+                -webkit-box-shadow: -5px 2px 50px 20px black;
+                -moz-box-shadow: -5px 2px 50px 20px black;
+                box-shadow: -5px 2px 50px 20px black;
+                margin: 50px 30px;
+            }
+        }
+        
+        @media (min-width: 768px) and (max-width: 991px) {
+            .formc {
+                border: 5px solid black;
+                width: 40rem;
+                border-radius: 20px;
+                -webkit-box-shadow: -5px 2px 50px 20px black;
+                -moz-box-shadow: -5px 2px 50px 20px black;
+                box-shadow: -5px 2px 50px 20px black;
+                margin: 40px 20px;
+            }
+        }
+        
+        @media (min-width: 575px) and (max-width: 767px) {
+            .formc {
+                border: 5px solid black;
+                width: 30rem;
+                border-radius: 20px;
+                -webkit-box-shadow: -5px 2px 50px 20px black;
+                -moz-box-shadow: -5px 2px 50px 20px black;
+                box-shadow: -5px 2px 50px 20px black;
+                margin: 35px 20px;
+            }
+        }
+        
+        @media (min-width: 480px) and (max-width: 574px) {
+            .formc {
+                border: 5px solid black;
+                width: 30rem;
+                border-radius: 20px;
+                -webkit-box-shadow: -5px 2px 50px 20px black;
+                -moz-box-shadow: -5px 2px 50px 20px black;
+                box-shadow: -5px 2px 50px 20px black;
+                margin: 30px 18px;
+            }
+        }
+        
+        @media (max-width: 479px) {
+            .formc {
+                border: 5px solid black;
+                border-radius: 20px;
+                width: 17rem;
+                -webkit-box-shadow: -2px 1px 25px 10px black;
+                -moz-box-shadow: -2px 1px 25px 10px black;
+                box-shadow: -2px 1px 25px 10px black;
+                margin: 25px 10px;
+            }
+        }
+        
+        #dashboard {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="card formc">
+                <div class="card-body">
+                    <h2 class="card-title text-center text-dark">SIGN UP</h2>
+                    <form class="mt-4" method="POST" action="connect.php">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="firstname">Firts name</label>
+                                <input type="text" class="form-control" placeholder="First name" name="firstname">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="lastname">Last name</label>
+                                <input type="text" class="form-control" placeholder="Last name" name="lastname">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputEmail4">Email</label>
+                                <input type="email" class="form-control" placeholder="Email" id="inputEmail4" name="email" value="">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputPassword4">Password</label>
+                                <input type="password" class="form-control" placeholder="Password lenght is 8" id="inputPassword4" name="password">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputCity">City</label>
+                                <input type="text" class="form-control" name="city" placeholder="city" id="inputCity">
+                            </div>
+                            <div class="form-group col-md-1">
+                            </div>
+                            <div class="form-group col-md-5">
+                                <label for="inputState">State</label>
+                                <input type="text" class="form-control" placeholder="state" name="state" id="inputstate">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputPhonenumber">Phone number</label>
+                                <input type="text" pattern="[0-9]{10}" class="form-control" placeholder="Phone number length is 10" id="inputPhonenumber" name="phone">
+                            </div>
+                            <div class="form-group col-md-1">
+                            </div>
+                            <div class="form-group col-md-5">
+                                <label for="inputPincode">Pincode</label>
+                                <input type="number" pattern="[0-9]{6}" class="form-control" placeholder="pincode length is 6" name="pincode" id="inputPincode">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">SIGN UP</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

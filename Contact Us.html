@@ -1,0 +1,83 @@
+<html>
+
+<head>
+    <title>Contact Us Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="contactus.css">
+    <script type="text/javascript">
+        function validate() {
+            alert("Nice");
+            return true;
+        }
+    </script>
+
+</head>
+
+<body background="Pics\photo-1519501025264-65ba15a82390.jpg">
+
+    <nav id="navbar">
+
+        <ul>
+            <li class="item"><a href="index.html">Home</a></li>
+            <li class="item"><a href="Contact Us.html">Contact Us</a></li>
+            <li class="item"><a href="about us.html">About Us</a></li>
+
+        </ul>
+    </nav>
+    <section class="contact">
+        <div class="content">
+            <h2>Contact Us</h2>
+        </div>
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>G.H.PATEL COLLEGE OF ENGINEERING AND TECHNOLOGY,<br>Near Bakrol Gate,<br>Vallabh Vidhyanagar,
+                            <br>Anand,<br>395001.
+                        </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>9512686469<br></p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Email-id</h3>
+                        <p>parthmshah21@gmail.com<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactForm">
+                <form name="feedback">
+                    <h2>Send Message</h2>
+                    <div class="inputBox">
+                        <input type="text" name="fname" required="required">
+                        <span>Full Name</span>
+                    </div>
+
+                    <div class="inputBox">
+                        <input type="text" name="email" required="required">
+                        <span>Email-id</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea required="required" name="tarea"></textarea>
+                        <span>Type Your Message</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" name="contactus" value="Send" onsubmit="validate()"> </input>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

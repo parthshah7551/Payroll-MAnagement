@@ -1,0 +1,252 @@
+<html>
+
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" type="text/css" href="../Project/dashboard.css"> -->
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            width: 100%;
+            /* background-color: rgb(100 247 0 / 32%); */
+            background-image: url('../Project/back.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+        
+        .id {
+            text-align: center;
+            background: linear-gradient(90deg, #090979, #fff);
+            width: 100%;
+            height: 120px;
+            border-bottom: 4px solid black;
+            border-left: 3px solid black;
+            border-top: 3px solid black;
+            border-right: 3px solid black;
+        }
+        
+        .id h1 {
+            text-align: center;
+            color: #000;
+            margin-top: -70px;
+        }
+        
+        .img {
+            width: 7%;
+            margin-left: -600px;
+            margin-top: 8px;
+            border-radius: 50%;
+        }
+        
+        .icon-bar {
+            /* Set a specific width */
+            width: 300px;
+            /* Set a specific width */
+            background: linear-gradient(120deg, #090979, #fff);
+            border-right: 4px solid black;
+        }
+        
+        .parth {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .icon-bar .active1 {
+            width: 260px;
+            /* Set a specific width */
+            background: linear-gradient(180deg, #090979, #fff);
+            color: #000;
+            text-decoration: none;
+            /* font-weight: bold; */
+        }
+        
+        .icon-bar .active2 {
+            width: 260px;
+            /* Set a specific width */
+            background: linear-gradient(180deg, #090979, #fff);
+            color: #000;
+            text-decoration: none;
+            /* font-weight: bold; */
+        }
+        
+        .icon-bar .active3 {
+            width: 260px;
+            /* Set a specific width */
+            background: linear-gradient(180deg, #090979, #fff);
+            color: #000;
+            text-decoration: none;
+            /* font-weight: bold; */
+        }
+        
+        .icon-bar .active4 {
+            width: 260px;
+            /* Set a specific width */
+            background: linear-gradient(180deg, #090979, #fff);
+            color: #000;
+            text-decoration: none;
+            /* font-weight: bold; */
+        }
+        
+        .icon-bar .active5 {
+            width: 260px;
+            /* Set a specific width */
+            background: linear-gradient(180deg, #090979, #fff);
+            color: #000;
+            text-decoration: none;
+            /* font-weight: bold; */
+        }
+        
+        .icon-bar .active6 {
+            width: 260px;
+            /* Set a specific width */
+            background: linear-gradient(180deg, #090979, #fff);
+            color: #000;
+            text-decoration: none;
+            /* font-weight: bold; */
+        }
+        
+        .icon-bar .active7 {
+            width: 260px;
+            /* Set a specific width */
+            background: linear-gradient(180deg, #090979, #fff);
+            color: #000;
+            text-decoration: none;
+            /* font-weight: bold; */
+        }
+        
+        .icon-bar .active8 {
+            width: 260px;
+            /* Set a specific width */
+            background: linear-gradient(180deg, #090979, #fff);
+            color: #000;
+            text-decoration: none;
+        }
+        
+        .icon-bar .active1:hover {
+            font-weight: bold;
+            color: black;
+        }
+        
+        .icon-bar .active2:hover {
+            font-weight: bold;
+            color: black;
+        }
+        
+        .icon-bar .active3:hover {
+            font-weight: bold;
+            color: black;
+        }
+        
+        .icon-bar .active4:hover {
+            font-weight: bold;
+            color: black;
+        }
+        
+        .icon-bar .active5:hover {
+            font-weight: bold;
+            color: black;
+        }
+        
+        .icon-bar .active6:hover {
+            font-weight: bold;
+            color: black;
+        }
+        
+        .icon-bar .active7:hover {
+            font-weight: bold;
+            color: black;
+        }
+        
+        .icon-bar .active8:hover {
+            color: black;
+            font-weight: bold;
+        }
+        
+        .icon-bar a {
+            display: block;
+            text-align: center;
+            padding: 20px;
+            transition: all 0.3s ease;
+            color: white;
+            font-size: 24px;
+        }
+        
+        .icon-bar a:hover {
+            background-color: #000;
+        }
+        
+        .active {
+            background-color: #4CAF50;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 538px;
+            background: linear-gradient(120deg, #090979, #fff);
+            width: 100%;
+            height: 75px;
+            text-decoration: none;
+            position: fixed;
+            font-size: 20px;
+            border-top: 4px solid black;
+        }
+        
+        a.link {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 5px;
+            padding: 5px;
+            border-radius: 50px;
+        }
+        
+        a.link:hover {
+            color: black;
+            background-color: White;
+        }
+        
+        .welcome {
+            margin-top: -280px;
+            /* margin-left: 1000px; */
+            text-align: center;
+            float: right;
+            font-size: 40px;
+            margin-left: 280px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <div class="id">
+        <img class="img" src="Pics\logo.png"> &nbsp;
+        <h1><b>Payroll Management System</b></h1>
+    </div>
+
+
+    <div class="parth">
+        <div class="icon-bar">
+            <a class="active1" href="dashboard.html">Dashboard</a>
+            <a class="active2" href="empdetails.php">Employee Details</a>
+            <a class="active3" href="attendence.html">Attendance</a>
+            <a class="active4" href="leave.html">Leave</a>
+            <a class="active5" href="payrollgenerate.html">Payroll Generate</a>
+            <a class="active6" href="#">Slip Generate</a>
+            <a class="active7" href="change_password.html">Change Password</a>
+            <a class="active8" href="index.html ">Logout</a>
+        </div>
+        <br>
+        <Br>
+        <footer class="footer">
+            <br>
+            <a class="link" href="Contact Us.html">Contact Us</a>&nbsp &nbsp
+            <a class="link" href="about us.html">About Us</a>&nbsp &nbsp
+            <a class="link" href="#">Help</a>&nbsp &nbsp
+        </footer>
+    </div>
+</body>
+
+</html>
